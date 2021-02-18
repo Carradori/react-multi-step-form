@@ -24,8 +24,8 @@ const FormUserDetails = ({
 	};
 
 	return (
-		<div>
-			<div>
+		<div className="container">
+			<div className="input-block">
 				<label htmlFor="name">Your name</label>
 				<input
 					autoFocus
@@ -37,7 +37,7 @@ const FormUserDetails = ({
 					defaultValue={values.name}
 				/>
 			</div>
-			<div>
+			<div className="input-block">
 				<label htmlFor="lastName">Your Last Name</label>
 				<input
 					type="text"
@@ -48,7 +48,7 @@ const FormUserDetails = ({
 					defaultValue={values.lastName}
 				/>
 			</div>
-			<div>
+			<div className="input-block">
 				<label htmlFor="email">Your email</label>
 				<input
 					type="text"
@@ -59,7 +59,7 @@ const FormUserDetails = ({
 					defaultValue={values.email}
 				/>
 			</div>
-			<div>
+			<div className="input-block">
 				<button onClick={handleContinue}>Continue</button>
 			</div>
 		</div>

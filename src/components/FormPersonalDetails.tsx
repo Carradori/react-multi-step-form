@@ -31,8 +31,8 @@ const FormPersonalDetails = ({
 	};
 
 	return (
-		<div>
-			<div>
+		<div className="container">
+			<div className="input-block">
 				<label htmlFor="occupation">Occupation</label>
 				<input
 					autoFocus
@@ -44,7 +44,7 @@ const FormPersonalDetails = ({
 					defaultValue={values.occupation}
 				/>
 			</div>
-			<div>
+			<div className="input-block">
 				<label htmlFor="city">Yout city</label>
 				<input
 					type="text"
@@ -55,7 +55,7 @@ const FormPersonalDetails = ({
 					defaultValue={values.city}
 				/>
 			</div>
-			<div>
+			<div className="input-block">
 				<label htmlFor="bio">Your bio</label>
 				<input
 					type="text"
@@ -66,8 +66,10 @@ const FormPersonalDetails = ({
 					defaultValue={values.bio}
 				/>
 			</div>
-			<div>
-				<button onClick={handleGoBack}>Go Back</button>
+			<div className="input-block">
+				<button onClick={handleGoBack} className="back">
+					Go Back
+				</button>
 				<button onClick={handleContinue}>Continue</button>
 			</div>
 		</div>
